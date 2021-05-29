@@ -1,15 +1,20 @@
 var clock = $('#currentDay');
+var currentTime = moment().format('H');
 // var saveButton09 = document.getElementById("save09");
 // var saveButton10 = document.getElementById("save10");
 
-
-// var elevenAM = $('#jobInput11').val();
-// var twelvePM = $('#jobInput12').val();
-// var onePM = $('#jobInput13').val();
-// var twoPM = $('#jobInput14').val();
-// var threePM = $('#jobInput15').val();
-// var fourPM = $('#jobInput16').val();
-// var fivePM = $('#jobInput17').val();
+// var nineAMSLOT = $('#timeslot09');
+// var tenAMSLOT = $('#save10');
+// var elevenAMSLOT = $('#timeslot11');
+// var twelvePMSLOT = $('#timeslot12');
+// var onePMSLOT = $('#timeslot13');
+// var twoPMSLOT = $('#timeslot14');
+// var threePMSLOT = $('#timeslot15');
+// var fourPMSLOT = $('#timeslot16');
+// var fivePMSLOT = $('#timeslot17');
+// var tenAMINPUT = $('#jobinput10');
+var anyButton = $('button');
+var anyInput = $('input');
 // var jobText = document.getElementById("jobInput");
 // var timeSlot = document.getElementById("timeslot")
 // var jobDescr = [] || JSON.parse(localStorage.getItem("jobDescr")) ;
@@ -87,5 +92,27 @@ $('#save16').on('click',function(){
 $('#save17').on('click',function(){
     localStorage.fivePM = $('#jobInput17').val();
 });
+
+// console.log(tenAMSLOT.val());
+console.log(currentTime);
+
+if (currentTime > anyButton.val()){
+    anyInput.addClass("past");
+    anyInput.removeClass("future");
+    anyInput.removeClass("present")
+}
+
+if (currenTime = anyButton.val()){
+    anyInput.removeClass("past");
+    anyInput.removeClass("future");
+    anyInput.addClass("present");
+}
+
+if (currentTime < anyButton.val()){
+    anyInput.addClass("future");
+    anyInput.removeClass("past");
+    anyInput.removeClass("present");
+}
+
 
 // saveButton10.addEventListener("click", saveText10);
