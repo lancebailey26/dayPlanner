@@ -20,6 +20,15 @@ setInterval(function (){
 
  
 $('#jobInput09').val(localStorage.nineAM);
+$('#jobInput10').val(localStorage.tenAM);
+$('#jobInput11').val(localStorage.elevenAM);
+$('#jobInput12').val(localStorage.twelvePM);
+$('#jobInput13').val(localStorage.onePM);
+$('#jobInput14').val(localStorage.twoPM);
+$('#jobInput15').val(localStorage.threePM);
+$('#jobInput16').val(localStorage.fourPM);
+$('#jobInput17').val(localStorage.fivePM);
+
 
 // function saveText09(){
 //     // var inputEl = $('#jobInput09');
@@ -54,4 +63,29 @@ $('#jobInput09').val(localStorage.nineAM);
 $('#save09').on('click',function(){
     localStorage.nineAM = $('#jobInput09').val();
 });
+$('#save10').on('click',function(){
+    localStorage.tenAM = $('#jobInput10').val();
+});
+$('#save11').on('click',function(){
+    localStorage.elevenAM = $('#jobInput11').val();
+});
+$('#save12').on('click',function(){
+    localStorage.twelvePM = $('#jobInput12').val();
+});
+$('#save13').on('click',function(){
+    localStorage.onePM = $('#jobInput13').val();
+});
+$('#save14').on('click',function(){
+    localStorage.twoPM = $('#jobInput14').val();
+});
+$('#save15').on('click',function(){
+    localStorage.threePM = $('#jobInput15').val();
+});
+$('#save16').on('click',function(){
+    localStorage.fourPM = $('#jobInput16').val();
+});
+$('#save17').on('click',function(){
+    localStorage.fivePM = $('#jobInput17').val();
+});
+
 // saveButton10.addEventListener("click", saveText10);
