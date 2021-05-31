@@ -1,26 +1,26 @@
-var clock = $('#currentDay');
+var clock = $('#currentDay'); 
 var currentTime = moment().format('H');
 // var saveButton09 = document.getElementById("save09");
 // var saveButton10 = document.getElementById("save10");
 
-var int9am = 9;
-var int10am = 10;
-var int11am = 11;
-var int12pm = 12;
-var int1pm = 13;
-var int2pm = 14;
-var int3pm = 15;
-var int4pm = 16;
-// var tenAMSLOT = $('#save10');
-// var elevenAMSLOT = $('#timeslot11');
-// var twelvePMSLOT = $('#timeslot12');
-// var onePMSLOT = $('#timeslot13');
-// var twoPMSLOT = $('#timeslot14');
-// var threePMSLOT = $('#timeslot15');
-// var fourPMSLOT = $('#timeslot16');
-// var fivePMInput = document.querySelector('#timeslot17').textContent;
-// fivePMInput = parseInt(fivePMInput[0,1]);
-var int5pm = 17;
+// var 9 = 9;
+// var 10 = 10;
+// var 11 = 11;
+// var 12 = 12;
+// var 13 = 13;
+// var 14 = 14;
+// var 15 = 15;
+// var 16 = 16;
+// // var tenAMSLOT = $('#save10');
+// // var elevenAMSLOT = $('#timeslot11');
+// // var twelvePMSLOT = $('#timeslot12');
+// // var onePMSLOT = $('#timeslot13');
+// // var twoPMSLOT = $('#timeslot14');
+// // var threePMSLOT = $('#timeslot15');
+// // var fourPMSLOT = $('#timeslot16');
+// // var fivePMInput = document.querySelector('#timeslot17').textContent;
+// // fivePMInput = parseInt(fivePMInput[0,1]);
+// var 17 = 17;
 // var tenAMINPUT = $('#jobinput10');
 // var anyButton = $('button');
 // var anyInput = $('.input');
@@ -103,7 +103,7 @@ $('#save17').on('click',function(){
 });
 
 // console.log(tenAMSLOT.val());
-console.log(currentTime);
+console.log("Current time in an integer format is " + currentTime);
 // console.log(fivePMInput);
 
 // console.log(anyInput.val());
@@ -112,75 +112,75 @@ console.log(currentTime);
 //     anyInput.addClass("present");
 // }
 
-if (int9am < currentTime){
+if (9 < currentTime){
     $('#jobInput09').addClass('past');
-}else if (int9am > currentTime){
+}else if (9 > currentTime){
     $('#jobInput09').addClass('future');
-}else if (int9am == currentTime){
+}else if (9 == currentTime){
     $('#jobInput09').addClass('present');
 }
 
-if (int10am < currentTime){
+if (10 < currentTime){
     $('#jobInput10').addClass('past');
-}else if (int10am > currentTime){
+}else if (10 > currentTime){
     $('#jobInput10').addClass('future');
-}else if (int10am == currentTime){
+}else if (10 == currentTime){
     $('#jobInput10').addClass('present');
 }
 
-if (int11am < currentTime){
+if (11 < currentTime){
     $('#jobInput11').addClass('past');
-}else if (int11am > currentTime){
+}else if (11 > currentTime){
     $('#jobInput11').addClass('future');
-}else if (int11am = currentTime){
+}else if (11 == currentTime){
     $('#jobInput11').addClass('present');
 }
 
-if (int12pm < currentTime){
+if (12 < currentTime){
     $('#jobInput12').addClass('past');
-}else if (int12pm > currentTime){
+}else if (12 > currentTime){
     $('#jobInput12').addClass('future');
-}else if (int12pm = currentTime){
+}else if (12 == currentTime){
     $('#jobInput12').addClass('present');
 }
 
-if (int1pm < currentTime){
+if (13 < currentTime){
     $('#jobInput13').addClass('past');
-}else if (int1pm > currentTime){
+}else if (13 > currentTime){
     $('#jobInput13').addClass('future');
-}else if (int1pm = currentTime){
+}else if (13 == currentTime){
     $('#jobInput13').addClass('present');
 }
 
-if (int2pm < currentTime){
+if (14 < currentTime){
     $('#jobInput14').addClass('past');
-}else if (int2pm > currentTime){
+}else if (14 > currentTime){
     $('#jobInput14').addClass('future');
-}else if (int2pm = currentTime){
+}else if (14 == currentTime){
     $('#jobInput14').addClass('present');
 }
 
-if (int3pm < currentTime){
+if (15 < currentTime){
     $('#jobInput15').addClass('past');
-}else if (int3pm > currentTime){
+}else if (15 > currentTime){
     $('#jobInput15').addClass('future');
-}else if (int3pm = currentTime){
+}else if (15 == currentTime){
     $('#jobInput15').addClass('present');
 }
 
-if (int4pm < currentTime){
+if (16 < currentTime){
     $('#jobInput16').addClass('past');
-}else if (int4pm > currentTime){
+}else if (16 > currentTime){
     $('#jobInput16').addClass('future');
-}else if (int4pm = currentTime){
+}else if (16 == currentTime){
     $('#jobInput16').addClass('present');
 }
 
-if (int5pm < currentTime){
+if (17 < currentTime){
     $('#jobInput17').addClass('past');
-}else if (int5pm > currentTime){
+}else if (17 > currentTime){
     $('#jobInput17').addClass('future');
-}else if (int5pm == currentTime){
+}else if (17 == currentTime){
     $('#jobInput17').addClass('present');
 }
 // if ()
