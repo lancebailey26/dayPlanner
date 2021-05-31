@@ -1,38 +1,11 @@
-var clock = $('#currentDay'); 
-var currentTime = moment().format('H');
-// var saveButton09 = document.getElementById("save09");
-// var saveButton10 = document.getElementById("save10");
+var clock = $('#currentDay'); // targets the clock display element
+var currentTime = moment().format('H'); //shows the current hour in an integer format
 
-// var 9 = 9;
-// var 10 = 10;
-// var 11 = 11;
-// var 12 = 12;
-// var 13 = 13;
-// var 14 = 14;
-// var 15 = 15;
-// var 16 = 16;
-// // var tenAMSLOT = $('#save10');
-// // var elevenAMSLOT = $('#timeslot11');
-// // var twelvePMSLOT = $('#timeslot12');
-// // var onePMSLOT = $('#timeslot13');
-// // var twoPMSLOT = $('#timeslot14');
-// // var threePMSLOT = $('#timeslot15');
-// // var fourPMSLOT = $('#timeslot16');
-// // var fivePMInput = document.querySelector('#timeslot17').textContent;
-// // fivePMInput = parseInt(fivePMInput[0,1]);
-// var 17 = 17;
-// var tenAMINPUT = $('#jobinput10');
-// var anyButton = $('button');
-// var anyInput = $('.input');
-// var jobText = document.getElementById("jobInput");
-// var timeSlot = document.getElementById("timeslot")
-// var jobDescr = [] || JSON.parse(localStorage.getItem("jobDescr")) ;
-
-setInterval(function (){
+setInterval(function (){  //constantly refreshes the clock element every second
     clock.text('It is currently ' + moment().format('dddd MMMM Do YYYY, h:mm:ss a'));
     }, 1000)
 
- 
+//displays local storage 
 $('#jobInput09').val(localStorage.nineAM);
 $('#jobInput10').val(localStorage.tenAM);
 $('#jobInput11').val(localStorage.elevenAM);
@@ -43,37 +16,7 @@ $('#jobInput15').val(localStorage.threePM);
 $('#jobInput16').val(localStorage.fourPM);
 $('#jobInput17').val(localStorage.fivePM);
 
-
-// function saveText09(){
-//     // var inputEl = $('#jobInput09');
-//     // var nineAM = $('#jobInput09').val();
-//     // var timeEl = 
-//     // var time = $('#timeslot09').text();
-//     // var nineAM = input;
-//     var nineAM = $('#jobInput09').val();
-//     var nineAMData = {
-//         time: "9AM",
-//         job: nineAM,
-//     }
-//     console.log(nineAMData);
-//     jobDescr.push(nineAMData);
-//     localStorage.setItem("jobDescr", JSON.stringify(jobDescr));
-// }
-// function saveText10(){
-//     // var inputEl = document.getElementById("jobInput10");
-//     // var input = inputEl.value;
-//     // var timeEl = document.getElementById("timeslot10");
-//     // var time = timeEl.textContent;
-//     var tenAM = $('#jobInput10').val();
-//     var tenAMData = {
-//         time: "10AM",
-//         job: tenAM,
-//     }
-//     console.log(tenAMData);
-//     jobDescr.push(tenAMData);
-//     localStorage.setItem("jobDescr", JSON.stringify(jobDescr));
-// }
-
+//on button click saves inputs to local storage
 $('#save09').on('click',function(){
     localStorage.nineAM = $('#jobInput09').val();
 });
@@ -102,16 +45,10 @@ $('#save17').on('click',function(){
     localStorage.fivePM = $('#jobInput17').val();
 });
 
-// console.log(tenAMSLOT.val());
+//reference for current time
 console.log("Current time in an integer format is " + currentTime);
-// console.log(fivePMInput);
 
-// console.log(anyInput.val());
-
-// if (currentTime >  anyInput.val()){
-//     anyInput.addClass("present");
-// }
-
+// compares current time to time values as integers, displays css class for color coding
 if (9 < currentTime){
     $('#jobInput09').addClass('past');
 }else if (9 > currentTime){
@@ -183,5 +120,3 @@ if (17 < currentTime){
 }else if (17 == currentTime){
     $('#jobInput17').addClass('present');
 }
-// if ()
-// saveButton10.addEventListener("click", saveText10);
